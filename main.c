@@ -35,6 +35,10 @@ int main(){
 
     printf("\n");
     printf("%d", sum(10, 2) * 2);
+
+    printf("\n");
+    Student* stud;
+    printStudent(createNode(stud));
     
     return 0;
 }

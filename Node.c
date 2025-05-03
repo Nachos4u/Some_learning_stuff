@@ -14,5 +14,9 @@ Node* createNode(Student* student){
 
 void* printNode(void* args){
     Node* node = (Node*) args;
+    if (node->value == NULL){
+        printf("ERROR!!");
+        return (void*) 1;
+    }
     node->value->print(node->value);
 }
